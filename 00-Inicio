@@ -1,0 +1,30 @@
+# Instalando Python para usar no VS Code
+# 1) baixar o instalador oficial do Python no site python.org
+
+# 2) Configurar o PATH do Python:
+# Durante a instalação do Python no Windows, você tem a opção de adicionar o Python ao PATH do sistema. Se não tiver feito isso durante a instalação, você pode configurá-lo manualmente:
+# Abra o Painel de Controle > Sistema e Segurança > Sistema.
+# Clique em Configurações avançadas do sistema à esquerda.
+# Clique em Variáveis de ambiente.
+# Na seção Variáveis do sistema, encontre a variável Path, selecione-a e clique em Editar.
+# Adicione o caminho para a pasta onde o Python foi instalado (por exemplo, C:\Python39 ou C:\Users\SeuNome\AppData\Local\Programs\Python\Python39) se ainda não estiver lá.
+
+# 3) Instalar o Visual Studio Code:
+# Se ainda não tiver o Visual Studio Code instalado, faça o download e a instalação a partir do site oficial code.visualstudio.com.
+
+# 4) Instalar a Extensão do Python no VS Code:
+# Abra o VS Code e vá para a view de extensões clicando no ícone de extensões na barra lateral esquerda (ou pressionando Ctrl + Shift + X).
+# Na barra de busca, digite "Python".
+# Localize a extensão "Python" da Microsoft e clique em Install.
+
+# 5) Configurar o Ambiente Virtual (Opcional, mas Recomendado):
+# Você pode criar um ambiente virtual usando venv ou virtualenv.
+
+# 6) Testar a Configuração:
+# Criar pasta em branco
+# File >> Open Folder
+# File >> New File
+# Salvar file com extensão .py
+
+# Escreva um pequeno script (como print("Hello, World!")) e execute-o para verificar se tudo está configurado corretamente.
+# Para rodar linha a linha do script: Shift + Enter
