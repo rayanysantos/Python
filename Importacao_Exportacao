@@ -18,6 +18,36 @@ os.chdir('/caminho/para/seu/novo/diretorio')
 pip install pandas
 # Na lateral direita, no fim da pagina, apertar na lixeirinha no nome do terminal para voltar para o terminal do python
 
+# Criando data frame na mao
+data = [
+    {'Nome': 'Alice', 'Idade': 25},
+    {'Nome': 'Bob', 'Idade': 30},
+    {'Nome': 'Charlie', 'Idade': 35}
+]
+df = pd.DataFrame(data)
+
 # Importando
 import pandas
 df_txt = pd.read_table('titulados_2014_final.txt')
+df_json = pd.read_json('endereço do arquivo')
+df_xlsx = pd.read_excel('endereço do arquivo')
+df_html_arquivo = pd.read_html('endereço do arquivo')
+
+#Diretamente de site
+df_html_site = pd.read_html('URL do site')
+
+#Índice zero organiza a tablea em um dataframe organizado
+df_html_site[0]
+
+#Verificando o resultado do processo
+df_html_site
+
+# Lendo as primeiras linhas
+# Configurando para aparecer todas as colunas, sem isso, aparecem as 3 primeiras e 3 ultimas
+pd.set_option('display.max_columns', None)
+print(df.head())
+# Se tiver usando em ambiente interativo, como o jupyter, pode usar apenas
+df.head()
+
+
+
