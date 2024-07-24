@@ -1,1 +1,23 @@
 # Para rodar linha a linha no VSCode Python: Shift+Enter
+
+#####################
+# Alterar diretorio #
+#####################
+import os
+
+# Obtendo o diretório atual
+os.getcwd()
+
+# Mudando para um novo diretório
+# No windows, precisa substituir \ por / ou \\ 
+os.chdir('/caminho/para/seu/novo/diretorio')
+
+# Lendo arquivos pelo pandas
+# Para usar um pacote novo, instalar
+# Menu superior: Terminal >> New terminal
+pip install pandas
+# Na lateral direita, no fim da pagina, apertar na lixeirinha no nome do terminal para voltar para o terminal do python
+
+# Importando
+import pandas
+df_txt = pd.read_table('titulados_2014_final.txt')
