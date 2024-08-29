@@ -1,0 +1,18 @@
+# Verificar nomes das colunas
+print(dados.columns)
+
+# Criar dicionario e depois renomear com base neles
+mapa = { 
+    "home" : "principal",
+    "how_it_works" : "como_funciona",
+    "contact" : "contato",
+    "bought" : "comprou"
+}
+
+dados=dados.rename(columns = mapa)
+
+# Se quiser alterar apenas uma coluna
+df = df.rename(columns={'Nome': 'Nome Completo'})
+
+# Visualizando as colunas após a alteração
+print(df.columns)
